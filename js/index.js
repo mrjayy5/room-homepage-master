@@ -13,8 +13,12 @@ const   navOpenBtn      = document.querySelector('header > .nav-open'),
 navOpenBtn.addEventListener('click', () => {
     nav.classList.add('show');
     overlay.classList.add('active');
-})
+});
 navCloseBtn.addEventListener('click', () => {
+    nav.classList.remove('show');
+    overlay.classList.remove('active');
+});
+overlay.addEventListener('click', () => {
     nav.classList.remove('show');
     overlay.classList.remove('active');
 });
