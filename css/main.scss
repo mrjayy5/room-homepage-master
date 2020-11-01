@@ -89,6 +89,7 @@ header {
                 float: left;
 
                 a {
+                    position: relative;
                     color: $black;
                     text-decoration: none;
                     text-transform: lowercase;
@@ -96,19 +97,31 @@ header {
                     font-weight: 600;
 
                     padding: 10px 15px;
-                }
 
-                &:first-child {
-                    a {
-                        padding: 10px 15px 10px 0;
+                    &:hover {
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            left: 0; right: 0; top: 32px;
+                            margin: 0 auto;
+                            border-bottom: 2px solid $black;
+                            width: 16px;
+                            height: 2px;
+                        }
                     }
                 }
 
-                &:last-child {
-                    a {
-                        padding: 10px 0 10px 15px;
-                    }
-                }
+                // &:first-child {
+                //     a {
+                //         padding: 10px 15px 10px 0;
+                //     }
+                // }
+
+                // &:last-child {
+                //     a {
+                //         padding: 10px 0 10px 15px;
+                //     }
+                // }
             }
         }
 

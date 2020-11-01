@@ -92,6 +92,7 @@ header nav ul li {
 }
 
 header nav ul li a {
+  position: relative;
   color: black;
   text-decoration: none;
   text-transform: lowercase;
@@ -100,12 +101,16 @@ header nav ul li a {
   padding: 10px 15px;
 }
 
-header nav ul li:first-child a {
-  padding: 10px 15px 10px 0;
-}
-
-header nav ul li:last-child a {
-  padding: 10px 0 10px 15px;
+header nav ul li a:hover:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 32px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  width: 16px;
+  height: 2px;
 }
 
 header nav .nav-close {
