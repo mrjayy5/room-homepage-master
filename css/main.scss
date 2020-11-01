@@ -380,13 +380,7 @@ img {
 
         &:hover {
             &:after {
-                content: '';
-                position: absolute;
-                left: 0; right: 0; top: 32px;
-                margin: 0 auto;
-                border-bottom: 2px solid $white;
-                width: 16px;
-                height: 2px;
+                border-bottom-color: $white !important;
             }
         }
     }

@@ -358,15 +358,7 @@ img {
     padding: 10px 15px 10px 15px !important;
   }
   nav ul li a:hover:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 32px;
-    margin: 0 auto;
-    border-bottom: 2px solid white;
-    width: 16px;
-    height: 2px;
+    border-bottom-color: white !important;
   }
   main {
     position: absolute;
