@@ -386,6 +386,10 @@ img {
         grid-template-rows: 3fr 90px 1fr;
     }
 
+    .content {
+        padding: 0 50px;
+    }
+
     .hero {
         &__image {
             grid-column-start: 1;

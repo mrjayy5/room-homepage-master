@@ -373,6 +373,9 @@ img {
     -ms-grid-rows: 3fr 90px 1fr;
         grid-template-rows: 3fr 90px 1fr;
   }
+  .content {
+    padding: 0 50px;
+  }
   .hero__image {
     -ms-grid-column: 1;
         grid-column-start: 1;
